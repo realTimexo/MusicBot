@@ -1,34 +1,34 @@
 
-# Music Bot RTX GAMINGG
+# Music Bot BrK
 
-## Overview
+## Genel Bakış
 
-This Music Bot for Discord is designed to elevate your server's music experience. It's a powerful tool for sharing and enjoying music with friends and community members while using Replit as your development environment.
+Discord için bu Müzik Botu, sunucunuzun müzik deneyimini yükseltmek için tasarlanmıştır. Replit'i geliştirme ortamınız olarak kullanırken arkadaşlarınızla ve topluluk üyeleriyle müzik paylaşmak ve keyfini çıkarmak için güçlü bir araçtır.
 
-## Features
+## Özellikler
 
-- **Multi-Source Playback**: Our bot can play music from various sources, including YouTube, SoundCloud, and Spotify, providing a diverse range of music options.
-- **User-Friendly Commands**: Interact with the bot using simple text commands such as `/play`, `/pause`, `/resume`, `/skip`, `/stop`, and `/queue` to control playback and manage your music queue.
-- **Queue Management**: Easily add songs to the queue, view the current queue, and manipulate the order of songs as needed.
-- **Volume Control**: Adjust the bot's volume to suit your preferences with convenient volume control commands.
-- **Now Playing Information**: Stay informed about the currently playing song, including details like title, artist, album, and duration.
-- **Error Handling**: Our bot is equipped with robust error handling to gracefully manage issues like unavailable songs or incorrect commands.
-- **Permissions**: Configure permissions to control who can use the bot's commands, ensuring your server's security.
-- **Customization**: Slash commands are used for this bot
-- **Support and Updates**: We provide support to address any questions or issues you may have, and we ensure that the bot stays up to date with the latest Discord library and dependency updates.
+- **Çok Kaynaklı Oynatma**: Botumuz YouTube, SoundCloud ve Spotify dahil olmak üzere çeşitli kaynaklardan müzik çalabilir ve çok çeşitli müzik seçenekleri sunar.
+- Kullanıcı Dostu Komutlar**: Oynatmayı kontrol etmek ve müzik kuyruğunuzu yönetmek için `/play`, `/pause`, `/resume`, `/skip`, `/stop` ve `/queue` gibi basit metin komutlarını kullanarak bot ile etkileşime geçin.
+- Kuyruk Yönetimi**: Kuyruğa kolayca şarkı ekleyin, mevcut kuyruğu görüntüleyin ve şarkıların sırasını gerektiği gibi değiştirin.
+- Ses Kontrolü**: Kullanışlı ses seviyesi kontrol komutlarıyla botun ses seviyesini tercihlerinize göre ayarlayın.
+- **Şu An Çalan Bilgi**: Başlık, sanatçı, albüm ve süre gibi ayrıntılar da dahil olmak üzere o anda çalan şarkı hakkında bilgi sahibi olun.
+- Hata İşleme**: Botumuz, kullanılamayan şarkılar veya yanlış komutlar gibi sorunları incelikle yönetmek için sağlam hata işleme ile donatılmıştır.
+- İzinler**: Botun komutlarını kimlerin kullanabileceğini kontrol etmek için izinleri yapılandırın ve sunucunuzun güvenliğini sağlayın.
+- Özelleştirme**: Bu bot için slash komutları kullanılır
+- **Destek ve Güncellemeler**: Sorularınız veya sorunlarınız için destek sağlıyoruz ve botun en son Discord kütüphanesi ve bağımlılık güncellemeleriyle güncel kalmasını sağlıyoruz.
 
-## Getting Started
+## Başlarken
 
-To get started with our Music Bot on Replit:
+Replit'teki Müzik Botumuzu kullanmaya başlamak için:
 
-1. Clone this repository to your Replit workspace.
-2. Set up your bot token and other configuration options.
-3. Run the bot using the appropriate command (e.g., `node bot.js`).
+1. Bu depoyu Replit çalışma alanınıza klonlayın.
+2. Bot tokenınızı ve diğer yapılandırma seçeneklerini ayarlayın.
+3. Botu uygun komutu kullanarak çalıştırın (örneğin, `node bot.js`).
 
-Refer to our bot's documentation for detailed information on usage and configuration.
+Kullanım ve yapılandırma hakkında ayrıntılı bilgi için botumuzun belgelerine bakın.
 
-## Support
+## Destek
 
-If you have any questions or encounter issues, please don't hesitate to reach out to our support team at []. We are here to help you make the most of your music bot experience on Replit.
+Herhangi bir sorunuz varsa veya sorunla karşılaşırsanız, lütfen [] adresinden destek ekibimize ulaşmaktan çekinmeyin. Replit'teki müzik botu deneyiminizden en iyi şekilde yararlanmanıza yardımcı olmak için buradayız.
 
-Enjoy sharing music and creating memorable moments with your Discord community!
+Discord topluluğunuzla müzik paylaşmanın ve unutulmaz anlar yaratmanın keyfini çıkarın!
