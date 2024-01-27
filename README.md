@@ -1,51 +1,53 @@
-#  MULTI-MUSIC BOT BY RTX 
-▶️ simple and powerful music bot.
-▶️ consisting of various commands.
-▶️ Still in development you may face minor bugs|
+# BrK TARAFINDAN ÇOKLU MÜZIK BOTU 
+▶️ basit ve güçlü müzik botu.
+▶️ çeşitli komutlardan oluşur.
+▶️ Hala geliştirme aşamasında küçük hatalarla karşılaşabilirsiniz|
 
 
-## 🛠️ Installation
+## 🛠️ Kurulum
 
-1. **Create a TOKEN Secret**: Generate a bot token from the Discord Developer Portal and add it to your bot.
-2. **Install Dependencies**: Install all required Node.js modules using the following command:
+1. **Bir TOKEN Sırrı Oluşturun**: Discord Geliştirici Portalından bir bot belirteci oluşturun ve botunuza ekleyin.
+2. **Bağımlılıkları Yükleyin**: Aşağıdaki komutu kullanarak gerekli tüm Node.js modüllerini yükleyin:
 > npm install
 
-## 📜 Commands
-/help: for available commands.
-/play: plays music.
+## 📜 Komutlar
+/help: mevcut komutlar için.
+/play: müzik çalar.
 ...
 
-## 🤝 Contributing [Contact me on Discord]
+## 🤝 Katkıda Bulunmak [Discord'da bana ulaşın]
 
-**Contributions to this project are welcome! If you'd like to contribute, follow these steps:**
+**Bu projeye katkılarınızı bekliyoruz! Katkıda bulunmak istiyorsanız, aşağıdaki adımları izleyin:**
 
-## Join Our Discord: Join our Discord server to connect with the community.
-## Show Your Work: Share your contributions with the community.
-## Bug Fixes: If you encounter any bugs or errors, please notify them.
-## Commit Changes: Commit your changes to your forked repository.
-## Pull Request: Submit a pull request with your changes.
+## Discord'umuza Katılın: Toplulukla bağlantı kurmak için Discord sunucumuza katılın.
+## Çalışmanızı Gösterin: Katkılarınızı toplulukla paylaşın.
+## Hata Düzeltmeleri: Herhangi bir hata veya hata ile karşılaşırsanız, lütfen bunları bildirin.
+## Commit Changes: Değişikliklerinizi çatallanmış deponuza işleyin.
+## Çekme İsteği: Değişikliklerinizle birlikte bir çekme isteği gönderin.
 
-# 📚 Copyright 
+# 📚 Telif Hakkı 
 
-All code in this project is authored by RTX. Please do not use this code for any public usage, such as creating YouTube videos, Git repositories, etc., without my explicit permission.
+Bu projedeki tüm kodlar RTX tarafından yazılmıştır. Lütfen bu kodu, açık iznim olmadan YouTube videoları, Git depoları vb. oluşturmak gibi herhangi bir genel kullanım için kullanmayın.
 
 /*
 
-   MADE BY RTX!! FEEL FREE TO USE ANY PART OF CODE
+   RTX TARAFINDAN YAPILMIŞTIR!!! KODUN HERHANGI BIR BÖLÜMÜNÜ KULLANMAKTAN ÇEKINMEYIN
 
-  ██████╗░████████╗██╗░░██╗           
-  ██╔══██╗╚══██╔══╝╚██╗██╔╝          
-  ██████╔╝░░░██║░░░░╚███╔╝░          
-  ██╔══██╗░░░██║░░░░██╔██╗░          
-  ██║░░██║░░░██║░░░██╔╝╚██╗          
-  ╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝          
+|       \         |  \  /  \
+| ▓▓▓▓▓▓▓\ ______ | ▓▓ /  ▓▓
+| ▓▓__/ ▓▓/      \| ▓▓/  ▓▓
+| ▓▓    ▓▓  ▓▓▓▓▓▓\ ▓▓  ▓▓
+| ▓▓▓▓▓▓▓\ ▓▓   \▓▓ ▓▓▓▓▓\
+| ▓▓__/ ▓▓ ▓▓     | ▓▓ \▓▓\
+| ▓▓    ▓▓ ▓▓     | ▓▓  \▓▓\
+ \▓▓▓▓▓▓▓ \▓▓      \▓▓   \▓▓
 
-   FOR EMOJIS EITHER YOU CAN EDIT OR JOIN OUR DISCORD SERVER 
-   SO WE ADD BOT TO OUR SERVER SO YOU GET ANIMATED EMOJIS.
+   EMOJILER IÇIN YA DÜZENLEYEBILIR YA DA DISCORD SUNUCUMUZA KATILABILIRSINIZ 
+   BU YÜZDEN SUNUCUMUZA BOT EKLIYORUZ, BÖYLECE ANIMASYONLU EMOJILER ELDE EDERSINIZ.
 
-   DISCORD SERVER : https://discord.gg/FUEHs7RCqz
+   DISCORD SUNUCUSU : https://discord.gg/FUEHs7RCqz
    YOUTUBE : https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A
 
-   FOR HELP CONTACT ME ON DISCORD
-   ## Contact    [ DISCORD SERVER :  https://discord.gg/c4kaW2sSbm ]
+   YARDIM IÇIN DISCORD'DAN BANA ULAŞIN
+   ## İletişim [ DISCORD SERVER : https://discord.gg/c4kaW2sSbm ]
 */z
