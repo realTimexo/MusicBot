@@ -29,32 +29,32 @@ module.exports = {
     try {
       const musicCommandsEmbed = new EmbedBuilder()
         .setColor(client.config.embedColor)
-        .setTitle('🎸 **Music Commands**')
+        .setTitle('🎸 **Muzik komutları**')
         .addFields(
-          { name: '🎹 Play', value: 'Stream a song from a given link or text from sources' },
-          { name: '⏹️ Stop', value: 'Makes the bot stop playing music and leave the voice' },
-          { name: '📊 Queue', value: 'View and manage the song queue of this server' },
-          { name: '⏭️ Skip', value: 'Skip the current playing song' },
-          { name: '⏸️ Pause', value: 'Pause the currently playing song' },
-          { name: '▶️ Resume', value: 'Resume the current paused song' },
-          { name: '🔁 Loop', value: 'Toggle loop mode for queue and current song' },
-          { name: '🔄 Autoplay', value: 'Enable or disable autoplay [play random songs ]' },
-          { name: '⏩ Seek', value: 'Seek to a specific time in the current song' },
-          { name: '⏮️ Previous', value: 'Play the previous song in the queue' },
-          { name: '🔀 Shuffle', value: 'Shuffle the songs in queue' }
+          { name: '🎹 Oynat', value: 'Verilen bir bağlantıdan veya kaynaklardan gelen bir metinden şarkı akışı' },
+          { name: '⏹️ Dur', value: 'Botun müzik çalmayı durdurmasını ve sesi bırakmasını sağlar' },
+          { name: '📊 Akış', value: 'Bu sunucunun şarkı kuyruğunu görüntüleme ve yönetme' },
+          { name: '⏭️ Atla', value: 'Bir sonraki şarkıya geçer' },
+          { name: '⏸️ duraklama', value: 'Çalmakta olan şarkıyı duraklatır' },
+          { name: '▶️ Devam', value: 'Duraklatılan geçerli şarkıyı sürdürür' },
+          { name: '🔁 Tekrarlama', value: 'Kuyruk ve geçerli şarkı için döngü modunu değiştirir' },
+          { name: '🔄 Otomatik oynatma', value: 'Otomatik oynatmayı etkinleştirme veya devre dışı bırakma [rastgele şarkı çalar]' },
+          { name: '⏩ Arayın', value: 'Geçerli şarkıda belirli bir zamana kadar arama' },
+          { name: '⏮️ Önceki', value: 'Kuyruktaki bir önceki şarkıyı çalar' },
+          { name: '🔀 Karıştır', value: 'Kuyruktaki şarkıları karıştırın' }
         )
         .setImage(`https://cdn.discordapp.com/attachments/1004341381784944703/1165201249331855380/RainbowLine.gif?ex=654f37ba&is=653cc2ba&hm=648a2e070fab36155f4171962e9c3bcef94857aca3987a181634837231500177&`); 
 
       const basicCommandsEmbed = new EmbedBuilder()
         .setColor(client.config.embedColor)
-        .setTitle('✨ **Basic Commands**')
+        .setTitle('✨ **Temel komutlar**')
         .addFields(
-          { name: '🏓 Ping', value: "Check the bot's latency" },
-          { name: '🗑️ Clear', value: 'Clear the song queue of this server' },
-          { name: '⏱️ Time', value: 'Display the current song playback time' },
-          { name: '🎧 Filter', value: 'Apply filters to enhance the sound as you love' },
-           { name: '🎵 Now Playing', value: 'Display the currently playing song information' },
-          { name: '🔊 Volume', value: 'Adjust the music volume [ hearing at high volumes is risky ]' },
+          { name: '🏓 Ping', value: "Botun pingini kontrol eder" },
+          { name: '🗑️ Temizle', value: 'Bu sunucunun şarkı kuyruğunu temizleyin' },
+          { name: '⏱️ Zaman', value: 'Geçerli şarkı çalma süresini görüntüleme' },
+          { name: '🎧 Filtre', value: 'Sesi istediğiniz gibi geliştirmek için filtreler uygulayın' },
+           { name: '🎵 Şimdi Çalan', value: 'Çalmakta olan şarkı bilgilerini görüntüler' },
+          { name: '🔊 Ses', value: 'Müzik ses seviyesini ayarlayın [ yüksek ses seviyelerinde işitme risklidir ]' },
         ) 
        .setImage('https://cdn.discordapp.com/attachments/1150827819547504741/1168917372267151370/standard.gif?ex=65538222&is=65410d22&hm=b4994392f44679da41fc9304eb69deaa3769e136057556deec0db69ae8d33a97&')
       const button1 = new ButtonBuilder()
