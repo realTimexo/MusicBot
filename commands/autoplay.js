@@ -18,8 +18,8 @@ const db = require("../mongoDB");
 const { EmbedBuilder } = require('discord.js');
 
 module.exports = {
-  name: "autoplay",
-  description: "Toggle the autoplay of the queue.",
+  name: "Otomatik Oynatma",
+  description: "Kuyruğun otomatik oynatılmasını açıp kapatın.",
   options: [],
   permissions: "0x0000000000000800",
   run: async (client, interaction) => {
@@ -33,8 +33,8 @@ module.exports = {
       
       const embed = new EmbedBuilder()
         .setColor('#2f58fe')
-        .setTitle('Your Music, Your Call!!')
-        .setDescription(queue?.autoplay ? '**✅ Autoplay ON**' : '**❌ Autoplay OFF**')
+        .setTitle('Senin Müziğin, Senin Çağrın!!!')
+        .setDescription(queue?.autoplay ? '**✅ Otomatik oynatma Açık**' : '**❌ Otomatik Oynatma Kapalı**')
         
       
       interaction?.reply({ embeds: [embed] });
