@@ -8,76 +8,58 @@
   ╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝          
 
    
-   # MADE BY RTX!! FEEL FREE TO USE ANY PART OF CODE
-   ## FOR HELP CONTACT ME ON DISCORD
-   ## Contact    [ DISCORD SERVER :  https://discord.gg/FUEHs7RCqz ]
+   # ERSTELLT VON RTX!! KANN FREI VERWENDET WERDEN
+   ## FÜR HILFE KONTAKTIERE MICH AUF DISCORD
+   ## Kontakt    [ DISCORD SERVER :  https://discord.gg/FUEHs7RCqz ]
    ## YT : https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A
 */
+
 const { ApplicationCommandOptionType } = require('discord.js');
 const db = require("../mongoDB");
 
-const { EmbedBuilder, ActionRowBuilder, ButtonBuilder } = require('discord.js');
-const { ButtonStyle } = require('discord.js');
+const { EmbedBuilder, ActionRowBuilder } = require('discord.js');
 
 module.exports = {
-  name: "help",
-  description: "Get information about bot and commands.",
+  name: "hilfe",
+  description: "Erhalte Informationen über den Bot und die Befehle.",
   permissions: "0x0000000000000800",
   options: [],
 
   run: async (client, interaction) => {
     try {
-      const musicCommandsEmbed = new EmbedBuilder()
+      const musikBefehleEmbed = new EmbedBuilder()
         .setColor(client.config.embedColor)
-        .setTitle('🎸 **Muzik komutları**')
+        .setTitle('🎸 **Musikbefehle**')
         .addFields(
-          { name: '🎹 Oynat', value: 'Verilen bir bağlantıdan veya kaynaklardan gelen bir metinden şarkı akışı' },
-          { name: '⏹️ Dur', value: 'Botun müzik çalmayı durdurmasını ve sesi bırakmasını sağlar' },
-          { name: '📊 Akış', value: 'Bu sunucunun şarkı kuyruğunu görüntüleme ve yönetme' },
-          { name: '⏭️ Atla', value: 'Bir sonraki şarkıya geçer' },
-          { name: '⏸️ duraklama', value: 'Çalmakta olan şarkıyı duraklatır' },
-          { name: '▶️ Devam', value: 'Duraklatılan geçerli şarkıyı sürdürür' },
-          { name: '🔁 Tekrarlama', value: 'Kuyruk ve geçerli şarkı için döngü modunu değiştirir' },
-          { name: '🔄 Otomatik oynatma', value: 'Otomatik oynatmayı etkinleştirme veya devre dışı bırakma [rastgele şarkı çalar]' },
-          { name: '⏩ Arayın', value: 'Geçerli şarkıda belirli bir zamana kadar arama' },
-          { name: '⏮️ Önceki', value: 'Kuyruktaki bir önceki şarkıyı çalar' },
-          { name: '🔀 Karıştır', value: 'Kuyruktaki şarkıları karıştırın' }
+          { name: '🎹 Play', value: 'Spielt ein Lied von einem Link oder einer Textquelle ab' },
+          { name: '⏹️ Stop', value: 'Beendet die Musikwiedergabe und verlässt den Sprachkanal' },
+          { name: '📊 Quenue', value: 'Zeigt und verwaltet die Song-Warteschlange für diesen Server' },
+          { name: '⏭️ Skip', value: 'Springt zum nächsten Song in der Warteschlange' },
+          { name: '⏸️ Pause', value: 'Pausiert das aktuell abgespielte Lied' },
+          { name: '▶️ Resume', value: 'Setzt das pausierte Lied fort' },
+          { name: '🔁 Loop', value: 'Schaltet den Wiederholungsmodus für Warteschlange oder aktuelles Lied um' },
+          { name: '🔄 Autoplay', value: 'Aktiviert oder deaktiviert die automatische Wiedergabe [spielt zufällige Songs ab]' },
+          { name: '⏩ Suchen', value: 'Springt zu einem bestimmten Zeitpunkt im aktuellen Lied' },
+          { name: '⏮️ Previous', value: 'Spielt den vorherigen Song in der Warteschlange' },
+          { name: '🔀 Shuffle', value: 'Mischt die Songs in der Warteschlange' }
         )
-        .setImage(`https://cdn.discordapp.com/attachments/1004341381784944703/1165201249331855380/RainbowLine.gif?ex=654f37ba&is=653cc2ba&hm=648a2e070fab36155f4171962e9c3bcef94857aca3987a181634837231500177&`); 
+        .setImage('https://cdn.discordapp.com/attachments/1004341381784944703/1165201249331855380/RainbowLine.gif?ex=654f37ba&is=653cc2ba&hm=648a2e070fab36155f4171962e9c3bcef94857aca3987a181634837231500177&'); 
 
-      const basicCommandsEmbed = new EmbedBuilder()
+      const basisBefehleEmbed = new EmbedBuilder()
         .setColor(client.config.embedColor)
-        .setTitle('✨ **Temel komutlar**')
+        .setTitle('✨ **Grundlegende Befehle**')
         .addFields(
-          { name: '🏓 Ping', value: "Botun pingini kontrol eder" },
-          { name: '🗑️ Temizle', value: 'Bu sunucunun şarkı kuyruğunu temizleyin' },
-          { name: '⏱️ Zaman', value: 'Geçerli şarkı çalma süresini görüntüleme' },
-          { name: '🎧 Filtre', value: 'Sesi istediğiniz gibi geliştirmek için filtreler uygulayın' },
-           { name: '🎵 Şimdi Çalan', value: 'Çalmakta olan şarkı bilgilerini görüntüler' },
-          { name: '🔊 Ses', value: 'Müzik ses seviyesini ayarlayın [ yüksek ses seviyelerinde işitme risklidir ]' },
-        ) 
-       .setImage('https://cdn.discordapp.com/attachments/1150827819547504741/1168917372267151370/standard.gif?ex=65538222&is=65410d22&hm=b4994392f44679da41fc9304eb69deaa3769e136057556deec0db69ae8d33a97&')
-      const button1 = new ButtonBuilder()
-        .setLabel('YouTube')
-        .setURL('https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A')
-        .setStyle(ButtonStyle.Link);
-
-      const button2 = new ButtonBuilder()
-        .setLabel('Discord')
-        .setURL('https://discord.gg/FUEHs7RCqz')
-        .setStyle(ButtonStyle.Link);
-
-      const button3 = new ButtonBuilder()
-        .setLabel('Code')
-        .setURL('https://replit.com/@BEASTGAMERS1?tab=community')
-        .setStyle(ButtonStyle.Link);
-
-      const row = new ActionRowBuilder()
-        .addComponents(button1, button2, button3);
+          { name: '🏓 Ping', value: "Überprüft die Latenz des Bots" },
+          { name: '🗑️ Clear', value: 'Löscht die Warteschlange für diesen Server' },
+          { name: '⏱️ Time', value: 'Zeigt die aktuelle Wiedergabezeit des Songs an' },
+          { name: '🎧 Filter', value: 'Wendet Filter an, um den Ton nach Wunsch anzupassen' },
+          { name: '🎵 Now playing', value: 'Zeigt Informationen über den aktuellen Song' },
+          { name: '🔊 Volume', value: 'Passt die Lautstärke der Musik an [Vorsicht bei hoher Lautstärke]' }
+        )
+        .setImage('https://cdn.discordapp.com/attachments/1225110305739374648/1331276672783093882/InShot_20250121_155759922.jpg?ex=67910784&is=678fb604&hm=a7c7a74848466ed14ba464a3625f9fcdcafec395ae6f21b9a3ba58454adcb8b7&');
 
       interaction.reply({
-        embeds: [musicCommandsEmbed, basicCommandsEmbed],
-        components: [row]
+        embeds: [musikBefehleEmbed, basisBefehleEmbed]
       }).catch(e => {});
     } catch (e) {
       console.error(e);
@@ -95,8 +77,8 @@ module.exports = {
   ╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝          
 
    
-   # MADE BY RTX!! FEEL FREE TO USE ANY PART OF CODE
-   ## FOR HELP CONTACT ME ON DISCORD
-   ## Contact    [ DISCORD SERVER :  https://discord.gg/FUEHs7RCqz ]
+   # ERSTELLT VON RTX!! KANN FREI VERWENDET WERDEN
+   ## FÜR HILFE KONTAKTIERE MICH AUF DISCORD
+   ## Kontakt    [ DISCORD SERVER :  https://discord.gg/FUEHs7RCqz ]
    ## YT : https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A
 */
