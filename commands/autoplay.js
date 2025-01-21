@@ -18,7 +18,7 @@ const db = require("../mongoDB");
 const { EmbedBuilder } = require('discord.js');
 
 module.exports = {
-  name: "Automatische Wiedergabe",
+  name: "Autoplay",
   description: "Aktivieren oder deaktivieren Sie die automatische Wiedergabe der Warteschlange.",
   options: [],
   permissions: "0x0000000000000800",
